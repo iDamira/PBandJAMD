@@ -4,7 +4,7 @@ const { logIn } = require('../../lib/passportStrategy.js');
 const authRoute = express.Router();
 
 authRoute.get('/', (req, res) => {
-  res.json('hello');
+  res.json(res.user);
 });
 
 // Login function with uses the logIn middleware
